@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sohrab Pirhadi — AI Researcher at IASBS. Machine learning, deep learning, NLP, and representation learning.">
+  <meta name="author" content="Sohrab Pirhadi">
+  <title>Sohrab Pirhadi | AI Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme-preference");
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Page scroll progress"></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#thesis" class="nav-link">Thesis</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-name">Sohrab Pirhadi</h1>
+          <p class="hero-title">AI Researcher</p>
+          <p class="hero-affiliation">
+            Artificial Intelligence Lab<br>
+            Institute for Advanced Studies in Basic Sciences (IASBS)
+          </p>
+          <div class="hero-actions">
+            <a href="cv/Sohrab_Pirhadi_CV.pdf" class="btn btn-primary" download>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download CV
+            </a>
+            <a href="https://scholar.google.com/citations?user=wrHy8R4AAAAJ&hl=en" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              Google Scholar
+            </a>
+            <a href="https://www.linkedin.com/in/sohrab-pirhadi/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/sohrab-phd" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img
+            src="images/profile.jpg"
+            alt="Portrait of Sohrab Pirhadi"
+            width="320"
+            height="320"
+            onerror="this.onerror=null;this.src='images/profile-placeholder.svg';"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-text reveal">
+          <p>
+            I am an Artificial Intelligence researcher with interests in machine learning, deep neural networks, representation learning, and natural language processing. My research focuses on developing data-efficient and interpretable learning systems that can extract meaningful knowledge from complex textual and scientific data.
+            My Master's research in Artificial Intelligence investigated transfer learning for relation extraction using transformer-based language models. This work explored how pre-trained representations can improve knowledge extraction under limited-data conditions and strengthened my interest in representation learning, transfer learning, and modern NLP.
+            Alongside NLP research, I have applied machine learning and explainable AI techniques to interdisciplinary scientific problems, including spectroscopy-based classification and environmental modeling. These projects provided experience with high-dimensional data analysis, feature selection, model interpretability, and scientific machine learning.
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <h2 class="section-title reveal">Research Interests</h2>
+        <div class="research-layout reveal">
+          <p class="research-intro">
+            My work sits at the intersection of learning algorithms, language understanding, and trustworthy AI systems.
+          </p>
+
+          <div class="research-topics">
+            <div class="research-group">
+              <h3 class="research-group-label">Learning Systems</h3>
+              <ul class="research-list">
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">01</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Artificial Intelligence</h4>
+                    <p class="research-desc">Building intelligent systems that learn, reason, and generalize from complex data.</p>
+                  </div>
+                </li>
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">02</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Machine Learning</h4>
+                    <p class="research-desc">Data-efficient models and algorithms for prediction, classification, and discovery.</p>
+                  </div>
+                </li>
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">03</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Deep Learning</h4>
+                    <p class="research-desc">Neural architectures for high-dimensional representation and end-to-end learning.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="research-group">
+              <h3 class="research-group-label">Language &amp; Representation</h3>
+              <ul class="research-list">
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">04</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Natural Language Processing</h4>
+                    <p class="research-desc">Extracting structure and meaning from text, including relation extraction and semantic analysis.</p>
+                  </div>
+                </li>
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">05</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Representation Learning</h4>
+                    <p class="research-desc">Learning embeddings that capture latent structure in textual and scientific data.</p>
+                  </div>
+                </li>
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">06</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Transfer Learning</h4>
+                    <p class="research-desc">Adapting pre-trained knowledge to new tasks under limited labeled data.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="research-group">
+              <h3 class="research-group-label">Trust &amp; Scale</h3>
+              <ul class="research-list">
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">07</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Explainable AI</h4>
+                    <p class="research-desc">Making model decisions interpretable for scientific and real-world applications.</p>
+                  </div>
+                </li>
+                <li class="research-item">
+                  <span class="research-index" aria-hidden="true">08</span>
+                  <div class="research-body">
+                    <h4 class="research-topic">Foundation Models</h4>
+                    <p class="research-desc">Large pre-trained models and their adaptation to specialized domains.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="container">
+        <h2 class="section-title reveal">Publications</h2>
+        <div class="publications-list reveal" id="publications-list" aria-live="polite">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Master's Thesis -->
+    <section class="section section-alt" id="thesis">
+      <div class="container">
+        <h2 class="section-title reveal">Master's Thesis</h2>
+        <div class="thesis-content reveal">
+          <h3 class="thesis-title">Sentence-level Relation Extraction Using Deep Neural Networks</h3>
+          <p class="thesis-desc">
+            This thesis investigates sentence-level relation extraction using deep neural network architectures and explores representation learning approaches for identifying semantic relationships between entities in natural language text.
+          </p>
+          <div class="thesis-resources">
+            <article class="resource-card">
+              <div class="resource-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h4>Dissertation</h4>
+              <a href="thesis/Sohrab_Pirhadi_Dissertation.pdf" class="btn btn-primary btn-sm" download>Read Dissertation</a>
+            </article>
+            <article class="resource-card">
+              <div class="resource-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h4>Presentation Slides</h4>
+              <a href="thesis/Sohrab_Pirhadi_Presentation_Slides.pdf" class="btn btn-primary btn-sm" download>View Slides</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <h2 class="section-title reveal">Gallery</h2>
+        <p class="section-lead reveal">
+          A few moments from academic life, research, and the places in between.
+        </p>
+        <div class="gallery-grid reveal" id="gallery-grid">
+          <figure class="gallery-item">
+            <button type="button" class="gallery-trigger" aria-expanded="false" aria-controls="gallery-caption-1">
+              <img src="images/gallery/01-campus.jpg" alt="Campus at IASBS" width="800" height="600" loading="lazy" onerror="this.onerror=null;this.src='images/gallery/01-campus.svg';">
+            </button>
+            <figcaption class="gallery-caption" id="gallery-caption-1">
+              Everyday life on campus at the Institute for Advanced Studies in Basic Sciences.
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-trigger" aria-expanded="false" aria-controls="gallery-caption-2">
+              <img src="images/gallery/02-lab.jpg" alt="Working in the AI Lab" width="800" height="600" loading="lazy" onerror="this.onerror=null;this.src='images/gallery/02-lab.svg';">
+            </button>
+            <figcaption class="gallery-caption" id="gallery-caption-2">
+              Research days in the Artificial Intelligence Lab — experiments, discussions, and long coding sessions.
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-trigger" aria-expanded="false" aria-controls="gallery-caption-3">
+              <img src="images/gallery/03-conference.jpg" alt="At an academic conference" width="800" height="600" loading="lazy" onerror="this.onerror=null;this.src='images/gallery/03-conference.svg';">
+            </button>
+            <figcaption class="gallery-caption" id="gallery-caption-3">
+              Presenting and exchanging ideas with researchers at academic conferences and workshops.
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-trigger" aria-expanded="false" aria-controls="gallery-caption-4">
+              <img src="images/gallery/04-workshop.jpg" alt="Collaborative workshop session" width="800" height="600" loading="lazy" onerror="this.onerror=null;this.src='images/gallery/04-workshop.svg';">
+            </button>
+            <figcaption class="gallery-caption" id="gallery-caption-4">
+              Collaborative workshops where ideas turn into shared projects and new research directions.
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-trigger" aria-expanded="false" aria-controls="gallery-caption-5">
+              <img src="images/gallery/05-library.jpg" alt="Reading and studying" width="800" height="600" loading="lazy" onerror="this.onerror=null;this.src='images/gallery/05-library.svg';">
+            </button>
+            <figcaption class="gallery-caption" id="gallery-caption-5">
+              Quiet hours spent reading papers and refining research questions.
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-trigger" aria-expanded="false" aria-controls="gallery-caption-6">
+              <img src="images/gallery/06-outdoors.jpg" alt="Time outdoors near campus" width="800" height="600" loading="lazy" onerror="this.onerror=null;this.src='images/gallery/06-outdoors.svg';">
+            </button>
+            <figcaption class="gallery-caption" id="gallery-caption-6">
+              Fresh air between deadlines — a reminder that research life has room for balance.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid reveal">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:sohrab.pirhadi94@gmail.com">sohrab.pirhadi94@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Google Scholar</span>
+              <a href="https://scholar.google.com/citations?user=wrHy8R4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">scholar.google.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/sohrab-pirhadi/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sohrab-pirhadi</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/sohrab-phd" target="_blank" rel="noopener noreferrer">github.com/sohrab-phd</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <p class="footer-name">Sohrab Pirhadi</p>
+        <p class="footer-role">Artificial Intelligence Researcher</p>
+        <p class="footer-copy">&copy; <span id="current-year"></span> Sohrab Pirhadi. All rights reserved.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://scholar.google.com/citations?user=wrHy8R4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sohrab-pirhadi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/sohrab-phd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="mailto:sohrab.pirhadi94@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/publications.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
