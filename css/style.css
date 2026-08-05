@@ -653,21 +653,23 @@ h1, h2, h3, h4 {
   width: 100%;
   padding: 0;
   border: none;
-  background: none;
+  background: var(--bg-alt);
   cursor: pointer;
   position: relative;
   overflow: hidden;
   line-height: 0;
+  aspect-ratio: 4 / 3;
 }
 
 .gallery-trigger::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(15, 23, 42, 0.28), transparent 45%);
+  background: linear-gradient(to top, rgba(12, 61, 82, 0.28), transparent 45%);
   opacity: 0;
   transition: opacity var(--transition);
   pointer-events: none;
+  z-index: 1;
 }
 
 .gallery-item:hover .gallery-trigger::after,
@@ -681,9 +683,12 @@ h1, h2, h3, h4 {
 }
 
 .gallery-trigger img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
   transition: transform 0.35s ease;
 }
 
